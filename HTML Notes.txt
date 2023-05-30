@@ -1,0 +1,482 @@
+Html is a case insensitive language.
+Tags---->In HTML tags means keyword and we can write the tags inside the arrow brackets(<>)
+Tags will tell the browser how to display its content.
+=============================================================================================================================================================================================
+
+Tags are of two types:
+1.<keword>----->Single tags
+If just open a tag we call it single or unpaired tags.
+2.<keyword> contents </keyword> ------>Double tags
+if we open a tag and then we close it then it is called double tag or paired tag.
+=============================================================================================================================================================================================
+
+Basics Tags;
+
+1)Header Tags;
+There are six header tags(h1,h2,h3,h4,h5,h6).
+Header tag occupies the whole line.
+*used to give boldness.
+*used to give font size
+*used to break the line or to acquire unique line.
+a) h1 tag-----> to give bold letter and font size....<h1>
+=============================================================================================================================================================================================
+
+2)Paragraph Tags;
+It is used to insert the paragraph.
+Note;lorem------> used to get the dummy paragraph.
+<p>lorem</p>
+*it will give normal text whatever written in the code
+*it will auto adjust the lines.
+*it will occupy the unique line.(at first it will occupy the whole line if it is necessary it will occupy the next line also)
+=============================================================================================================================================================================================
+
+
+3)Span Tags;
+It is used to print the text in same line.
+*it gives Normal text
+*It occupies the same line.
+
+Attributes:
+It used to apply some basic amount of styling.
+1.Body Tag attributes:
+We have to write inside the body tag olny.
+To change the text colour we use text tag
+     text=colour/code;
+Example=<body text="red">
+We can give colour code also 
+Example=<body text=#02CA66";
+
+To change background colour we use bgcolor tag
+    bgcolor=colour name/colour code
+Note:If we give the wrong spelling for the color it will give black as default.
+But if we dont give any text or bgcolor tag by default it will give white colour.
+
+To add background Image we use bgbackground
+We have to download image to the same folder where you written the code.
+For example if we written the code in xyz then we have to save the image in the xyz folder only.
+      background="path"/"docname";
+Example: <body background="img.jpeg">or 
+         <body background=".\img.jpeg">
+Note:1)Display size w*h
+      ==
+     Image Size w*h
+if it is not equal then we have to compress and resize
+============================================================================================================================================================================================
+
+Align----->It is used to place the text we written.
+example----><body align=centre or Right).
+If we dont use align attribute by default it will consider as left.
+Align will work for body,header tag,paragraph tag because these tags occupies whole line but align not work for span tag because span tag doesnt occupy the whole
+line insted of that it will occupy the space for that perticular text.
+=============================================================================================================================================================================================
+
+Basic Tags;
+---->br tag: it is used to break the line explicitely. Break tag is a single tag.
+---->hr tag: it is used to insert a horizontal line or (horizontal rule in UI).
+example---><h1 align="center">Notes<hr></hr></h1>
+we dont give <h1><hr> Notes </hr><h1>------>not working
+=============================================================================================================================================================================================
+
+
+---->Marquee tag: Marquee tag is used to scroll the text. if we dont give from where to where scrolling by default it will scroll from right to left.
+        <marquee> CONTENT </marquee>
+marquee tag occupy the full line.
+Attributes of Marquee tags:
+1) Direction: Default direction is right to left.
+2)Behavior: It will tells to text how to behave.
+In behavior we give scroll,slide,alternate.
+Default behaviour is scroll. To use alternate behaviour direction will be right or left it will not work for up or down.If we want to do for up and down
+we have to increase the width and height.
+3)bg color:color name/code.
+4)width:pixel
+we have to give width either in pixel or %.But pixel will constant.But if we give % it will vary.So we have to give %. 
+5)height:pixel
+6)Loop: it will say how many time it should be work(behaviour)
+     loop="5";
+7)Scroll Amount:It is used to give the behavior(scroll,slide,alternate) speed.To increase the speed.
+    scrollamount="10";Negative values will not be considered.If we give the negative values then it will consider it as default value.....i.e 6.
+if scroll amount increases.Speed also increases.Default value of scroll amount is 6.
+8) Scrolldelay:It is also used to give behaviour(scroll,slide,alternate) speed.To decrease the speed.
+ if time increases speed will be decreases. Negative values will not be considered.If we give the negative values then it will considered it as default value i.e 6.
+=============================================================================================================================================================================================
+Links:
+* Links is used to redirect to another document.This is called External link.
+* Links is also used to scroll to another part of same web page.This is called Internal link.
+
+Tags used in Links:
+1.anchore tag=It is used to go another link.
+   <a href="doc name"> click to open docname </a>
+where href=hyperlink reference.We can give any link inside the anchore tag ex;local link,youtube link,facebook link, whats app link etc.....(we have to give URL).
+If the given link is once visited by user then the link will be in violet color.
+if the given link is not visited by the user then the link will be in blue color.
+If we want to put the link of the file present in the another file we use ../(double dot slash).
+../(double dot slash) is used to come out from the current folder.
+
+Attributes used in anchor tag:
+
+target="blank"--->it is used to open the link in new tab only once.
+target="_blank"------> it is used to get the new tab in every click.
+target="_self"---->it is used to open the link in the same tab it self.
+If we don't mention the target attributes by default is "_self". 
+
+Note:If we use anchor tag,the link will be open if the google supports that file otherwise it will be downloaded.
+
+=============================================================================================================================================================================================
+Direct Insert the doucument:
+=============================================================================================================================================================================================
+1.To insert image...
+ <img scr="path" alt=""> -------->It is a Single tag.
+In alt we can give a alternate msg....For example if the path is wrong the browser will not show any image,it will show blank....in sted of blank if we want to print ant msg,we can give
+that msg inside alt.
+ <img scr="path" alt="Image Not found">
+If we want to vary the img size we can use width and height attributes.
+     <img scr="path" alt="image not found" width="500px" height="350px">
+=============================================================================================================================================================================================
+2.To insert audio...
+    <audio src="path" controls></audio>-------------->audio is double tag
+controls attributes is simply given to show the audio file in browser.
+We cannot write any text between the audio tag.
+<audio>Auido</audio>----->We cant give like this.
+=============================================================================================================================================================================================
+3.To insert video..
+     <video src="path" controls></video>----->It is a double tag..
+Heare controls is given to play the video..If we dont give the controls it will show tumbnails only...
+We can also vary size of the videous(width and height).
+We cannot write any text between the video tag.
+<video>Auido</video>----->We cant give like this.
+=============================================================================================================================================================================================
+4. To insert youtube video:
+Here we cant use any tags we directly copy the link.
+Directly go to the YouTube and open the video and click share and click embed and copy the link and directly copy into to the VSCode.
+=============================================================================================================================================================================================
+5.To insert remaining doc supported by browser:
+iframe:To insert one web page inside another web pages.
+<iframe src="">------>used to insert pdf,html,text etc.....
+=============================================================================================================================================================================================
+Lists:
+=============================================================================================================================================================================================
+1. It is used to link the image.
+2. We have to use the relation attributes....otherwise broweser doesnt know which image to insert.
+    <link rel="icon" href="../Path">
+=============================================================================================================================================================================================
+List are of Two types:
+1.Ordered List.
+2.Unordered List.
+
+Number List are Ordered list.
+Example:
+1
+2
+3
+4
+5
+OR
+a
+b
+c
+d
+e
+OR
+A
+B
+C
+D
+E
+F
+         
+Bullets are unordered list.
+Example:disk,circle,square.
+=============================================================================================================================================================================================
+
+1.Ordered List tag:
+It is used for Ordered list.
+     <ol></ol>
+List tag is used to write one below another.
+=============================================================================================================================================================================================
+Attributes used in ordered list:
+1. Type: It is used to give wihich type of list we want. For Example(1,2,3,4...) or (a,b,c,d,e....).
+     <ol type="1">
+<li>java</li>
+<li>SQL</li>
+<li>HTML</li>
+===============================================================================================================================================================================================
+2.Start;
+It give the instructions from which letter it will be started.
+<ol type="1" start="45"></ol>
+Now the list will start from 45.
+=============================================================================================================================================================================================
+2.Unordered List Tag;
+Same as Orederd list but here insted of ol we give ul.
+<ul type="Square">
+<li>java</li>
+<li>SQL</li>
+<li>HTML</li>
+Note: In unordered list Start attributes are Not allowed.
+<ul type="Square" start='6'>
+<li>java</li>         ------------------------------>Not Working 
+<li>SQL</li>
+<li>HTML</li>
+=============================================================================================================================================================================================
+
+Table Creation:
+=============================================================================================================================================================================================
+For creating table:
+1.Table + border-------><table border="5px" bordercolor="black" bgcolor="red" align="Center" cellspacing="5px" cellpadding="5px">
+2.Row--------><tr><\tr>
+3.Header--------><th> Name </th>
+                 <th> Salary </th>
+                 <th> COmm </th>
+4.Row
+5.Data-----------------><td> Virat </td>
+                        <td> 250000</td>
+                        <td> 520 </td>
+
+
+Cellspacing=It is used to give the space to the cell(gap between one cell to another).
+Default value for cellspacing is 2px.
+
+Cellpadding=It is give space inside the cell.(gap between cell border and cell data).
+Default value for cellpadding is 
+=============================================================================================================================================================================================
+Colspan=It is used to merge the two row.--------><td colspan="2"> </td>
+rowspan=It is used to merge the two column----------><td rowspan="2"> </td>
+=============================================================================================================================================================================================
+Forms:
+<form action=file name></form>
+input tag---->It is used to put the box.Dont use input tag without form tag.It is a single tag.
+=============================================================================================================================================================================================
+2.Lable tag------>Lable tag is used to give the name for that box.
+<lable> Email: </lable><input type="text">
+============================================================================================================================================================================================
+Attribute:
+1.type---->It is used to store which type of data.
+<input type="Text"></input>
+================================================================================================================
+2.Action---->When we submit  where the form will go.
+================================================================================================================
+3.Placeholder----->It is used to diplay information inside the box.
+4.Required------>It is used to say it is mandatory.
+5.Password------->It is used to show the password in bullet manner.
+6.tel---->It is used to insert num or char.
+7.maxLangth------>it is used to give the value upto maxlength char.
+8.MinLength------->
+9.Number------>it is used to input only number data.
+10.Step----->It is used to increase the number.
+
+
+3.Fieldset tag------>it is used to get seperate layout.
+Attributes--->
+1.Legend---->It is 
+
+
+
+Inserting Special char and emoji;
+UTF-8----->It is a charecter set and it will hold all the charecters,special charecter,emoji.
+*To convert unique code into char...ex--->65 into a.
+Syntax---->&#uniquecode;
+example----><h1>&#65;    o/p--->a
+            <h1>&#8377;   o/p--->rupees symbol
+            <h1>&#127817; o/p----->emoji
+To get the unique value----->website---->toptal.com.
+TO get unique value for emoji---->website---->HTML emoji reference.
+
+
+SVG--->SCalable Vector Graphics.
+It is used to insert logos and maintain the image clarity.
+
+Tags--->
+1.rect------>used to get rectangle.
+<rect x="150" y="150" width="200px" heigth="200px" stroke="white" stroke width="20px">
+stroke---->It is used to give the inside border color.
+stroke------->It is used to get the inside border width.
+
+2.circle------->used to get the circle.
+
+
+
+Scementic Tags:
+1.<div> tag
+2.<nav> tag
+3.<selection tag>
+4.<footer> tag
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
